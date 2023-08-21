@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/* font-face */
+@font-face {
+    font-family: ham;
+    src: url(./PyeongChangPeace-Bold.ttf);
+}
+@font-face {
+    font-family: han;
+    src: url(./PyeongChangPeace-Light.ttf);
+}
+.ha{font-family: 'ham','han';
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+</head>
+<style>
+    /* tag selectir */
+    p{
+        color: red;
+    }
+    /* id selector */
+    #menu {
+        color: blue;
+    }
+    /* class selector */
+    .junsu {
+        color: green;
+    }
+    /* asterisk:전체선택자 */
+    *{
+        /* 초기화코드 */
+        margin: 0;
+        padding: 0;
+        color: #333;
+        line-height: 1.75;
+        list-style: none;
+    }
+    /* 자손선택자 */
+    ul li{
+        font-size: 24px;
+    }
+    body p{
+        background-color: yellow;
+    }
+    ul h3{
+        background-color: black;
+    }
+</style>
+<body>
+    <p>
+        태그 서택자Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Cum rem a modi sed ratione molestias rerum non nesciunt
+        doloremque quas, deleniti voluptatum ipsa quo quidem 
+        llam totam? Quas, mollitia sit.
+    </p>
+    <!-- ul#menu -->
+    <ul id="menu">
+        <li>아이디 선택자</li>
+        <li>아이디 중복X</li>
+        <li>아이디 문서에 하나만</li>
+        <li>복습하기</li>
+        <li>과제하기</li>
+    </ul>
+    <!-- .junsu -->
+    <h1 class="junsu">
+        클래스 선택자 / 중복사용 O
+    </h1>
+    <div>
+        Lorem ipsum2 dolor sit amet consectetur adipisicing
+        elit. Optio ducimus possimus est nemo recusandae
+        blanditiis facere maiores ullam explicabo. Veritatis
+        aperiam exercitationem vitae in doloribus libero eum.
+    </div>
+    <hr>
+    <ul>
+        <li><h3>하위선택자</h3></li>
+        <li>ipisicing elit. Pr</li>
+        <li> esse, nam nesciun</li>
+        <li> esse, nam nesciun</li>
+    </ul>
+    
+</body>
+</html>

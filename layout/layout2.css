@@ -1,0 +1,40 @@
+.wrap{
+    background-color: lightblue;
+    max-width: 1000px;
+    width: 1000px;
+    margin: auto;
+    margin-top: 100px;
+}
+header{
+    background: green;
+    width: 1000px;
+    height: 150px;
+}
+nav {
+    background: rgb(111, 240, 111);
+    width: 1000px;
+    height: 150px;
+}
+main{
+    display: flex;
+}
+.side_Left {
+    background: rgb(81, 187, 155);
+    width: 30%;
+    height: 500px;
+}
+.contents {
+    background: rgb(107, 179, 221);
+    width: 40%;
+    height: 500px;
+}
+.side_right {
+    background: rgb(128, 136, 139);
+    width: 30%;
+    height: 500px;
+}
+footer{
+    background: rgb(182, 27, 73);
+    width: 1000px;
+    height: 150px;
+}

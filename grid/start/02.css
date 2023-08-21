@@ -1,0 +1,10 @@
+#wrapper
+{
+    display: grid;
+    width: 600px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:repeat(2,100px);
+    grid-template-rows: minmax(100px,auto);
+    grid-template-rows: minmax(100px,200px);
+    grid-template-rows: repeat(2,1fr) minmax(100px,300px); /* 1:1 비율의 2행을 선언하고 100px~300px 의 크기를 지정 */
+}

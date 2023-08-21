@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background: red;
+            width: 500px;
+            height: 500px;
+            position: relative;
+            left: 50%;
+            /* margin-left: -250px; */
+            transform: translate(-250px);
+        }
+
+        .container2 {
+            width: 500px;
+            height: 500px;
+            background: blue;
+            position: relative;
+            left: 50%;
+            transform: translate(-250px);
+        }
+
+        .container3 {
+            width: 500px;
+            height: 500px;
+            background: rgb(29, 145, 19);
+            position: relative;
+            left: 50%;
+            transform: translate(-250px);
+        }
+
+        .box1 {
+            background-color: yellow;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            left: calc(100% / 2);
+            /* margin-left: -25px; */
+            top: calc(100% / 2);
+            /* margin-top: -25px; */
+            transform: translate(calc(-50px / 2), calc(-50px / 2));
+            z-index: 1;
+        }
+
+        .box2 {
+            background: gray;
+            width: 250px;
+            height: 250px;
+            position: absolute;
+            left: 50%;
+            margin-left: -125px;
+            top: 50%;
+            margin-top: -125px;
+        }
+
+        .box3 {
+            background-color: rgb(243, 148, 23);
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+
+        .box4 {
+            background-color: rgb(200, 54, 236);
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 10px;
+            bottom: 10px;
+        }
+
+        .boxx {
+            background-color: rgb(43, 138, 80);
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+        }
+
+        .boxxx {
+            background-color: rgb(15, 197, 182);
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+        }
+
+        .box5 {
+            background: gray;
+            width: 250px;
+            height: 250px;
+            position: absolute;
+            left: 50%;
+            margin-left: -125px;
+            top: 50%;
+            margin-top: -125px;
+        }
+
+        .box6 {
+            font-size: 60px;
+            color: lightgoldenrodyellow;
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            top: 50%;
+            margin-top: -30px;
+            left: 30px;
+        }
+
+        .box7 {
+            color: lightgoldenrodyellow;
+            font-size: 60px;
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            top: 50%;
+            margin-top: -30px;
+            right: 30px;
+        }
+
+        .container4 {
+            background-color: cornsilk;
+            width: 500px;
+            height: 500px;
+            position: relative;
+            left: 50%;
+            margin-left: -250px;
+        }
+
+        .botten {
+            background-color: brown;
+            background-image: url(./top.png);
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 50%;
+            margin-left: -50px;
+            top: 50%;
+            margin-top: -50px;
+        }
+        .s1 {
+            background-color: gray;
+            width: 100px;
+            height: 50px;
+            position: relative;
+            right: 120px;
+            bottom: 0px;
+        }
+        .s2 {
+            background-color: gray;
+            width: 100px;
+            height: 50px;
+            position: relative;
+            bottom: 120px;
+            left: 200px ;
+        }
+        .s3 {
+            background-color: gray;
+            width: 100px;
+            height: 50px;
+            position: relative;
+            left: 520px;
+            bottom: 95px;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="top">top</p>
+    <div class="container">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3
+            <div class="b">b</div>
+        </div>
+        <div class="box4">box4</div>
+        <div class="boxx">box4</div>
+        <div class="boxxx">box4</div>
+    </div>
+    <div class="container2">
+        <div class="box5">box5</div>
+    </div>
+    <div class="container3">
+        <div class="box6">◁</div>
+        <div class="box7">▷</div>
+    </div>
+    <div class="container4">
+        <a href="#top" class="botten"></a>
+        <div class="s1">s1</div>
+        <div class="s2">s2</div>
+        <div class="s3">s3</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-letter {
+            font-size: 150%;
+        }
+
+        p:first-child {
+            color: blue;
+        }
+
+        p:last-child {
+            color: red;
+        }
+
+        p:nth-child(3) {
+            color: blueviolet;
+        }
+
+        p {
+            background: lightgray;
+        }
+        /* 태그 안에 자식으로 추가 */
+        p:before{
+            content: '😎' 
+        }
+        p:after{
+            width: 500px;
+            content: '추가';
+            font-size: 8px;
+            color: blueviolet;
+            background: coral;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>:가상선택자</h1>
+    <!-- :hover -->
+    <div class="box">
+        <p>COMPANY</p>
+        <p>PRODUCT</p>
+        <p>SERVICE</p>
+        <p>COMMUNITY</p>
+    </div>
+</body>
+
+</html>

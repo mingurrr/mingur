@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    height: 150px;
+    width: 100%;
+}
+#opt1{align-items: stretch}/* 교차축 정렬설정 */
+#opt2{ align-items:flex-start;}/* 교차축 시작점배치 */
+#opt3{align-items: flex-end;}/* 교차축 끝점 배치 */
+#opt4{align-items: center;}/* 교차축 중앙정렬 */
+#opt5{align-items: baseline;}/* 문자기준선에 맞춰배치 */

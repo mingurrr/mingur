@@ -1,0 +1,9 @@
+.wrap{
+    width: 100%;
+}
+.container{max-width: 1180px; width: 100%; margin: auto; background: rgba(255, 255,255,1.5); 
+height: inherit;}
+header{height: 100px; background-color: green;}
+footer{height: 100px; background-color: red;}
+.banner_wrap{height: 300px; background-color: blue;}
+.content_wrap{height: 500px; background-color: aqua;}

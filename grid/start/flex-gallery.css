@@ -1,0 +1,59 @@
+html {
+    /* 반응형폰트 16px
+    16px 을 10px 로 맞춤 
+    */
+    /* 1rem 은  16px 이므로 계산이 어려움 
+    최상위 요소의 기본 폰트를 10px 로 지정하는 팁
+     */
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #222;
+}
+
+h1 {
+    border-bottom: 1px solid #ccc;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.gallery {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+}
+.image{
+    border-radius: 10px;
+    background-color: #333;
+    padding: 1rem;
+    margin: 5px;
+    /* frow shrink basis */
+    flex: 1 1 300px;
+    color: #fff;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+}
+.imgge.wide{
+    flex: 2 2 480px;
+}
+.image img{
+    border-radius:5px ;
+}
+.image figcaption{
+    font-weight: bold;
+    margin-top: 10px;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    padding-top: 3px;
+}

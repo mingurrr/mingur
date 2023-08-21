@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .cf::after {
+            content: '';
+            /* HTML 문서의 태그사이에 작성하는거
+            웹페이지에서 보이는거 =>글자 */
+            display: block;
+            clear: both;
+            overflow: hidden;
+        }
+
+        .fl {
+            float: left;
+        }
+        .fr{
+            float: right;
+        }
+
+        .wrap {
+            width: 500px;
+            margin: auto;
+            background-color: gray;
+        }
+
+        header {
+            background-color: red;
+        }
+
+        main {
+            background-color: blue;
+        }
+
+        section {
+            background-color: yellow;
+            width: 300px;
+        }
+        h1,ul{
+            background-color: yellow;
+        }
+        .mx1 {margin: 0 10px;}
+        nav li{background-color: green;}
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="cf">
+            <h1 class="fl">Logo</h1>
+            <ul class="fr">
+                <li class="fl"><a href="#"></a>test</li>
+                <li class="fl"><a href="#"></a>test</li>
+                <li class="fl"><a href="#"></a>test</li>
+                <li class="fl"><a href="#"></a>test</li>
+            </ul>
+        </header>
+        <main class="cf">
+            <nav class="fl">
+                <ul class="cf">
+                    <li class="fl"><a href="#">m1</a></li>
+                    <li class="fl" mx1><a href="#">m1</a></li>
+                    <li class="fl"><a href="#">m1</a></li>
+                </ul>
+            </nav>
+            <section class="fl">section</section>
+            <aside class="fl">aside</aside>
+        </main>
+        <footer>footer</footer>
+    </div>
+</body>
+
+</html>

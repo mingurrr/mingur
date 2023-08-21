@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>ANIMATION</title>
+    <style>
+        p {
+            width: 100px;
+            height: 100px;
+            background: brown;
+            /* 애니메이션의 이름 */
+            animation-name: ani;
+            /* 애니메이션의 지속시간 */
+            animation-duration: 4s;
+            /* 애니메이션 종료시 스타일지정 */
+            animation-fill-mode: forwards;
+            /* 실행횟수 */
+            animation-timing-function: 3;
+            animation-iteration-count: infinite;
+            /* 방향  */
+            animation-duration: alternate;
+            /* 상태 */
+            animation-play-state: running;
+        }
+
+        @keyframes ani {
+            0% {
+                transform: translate(200px, 200px);
+                width: 150px;
+                background-color: green;
+                color: white;
+            }
+            50%{
+                background-color: blue;
+                width: 50px;
+                transform: translate(0,100px) rotate(45deg);
+            }
+
+            100% {
+                transform: translate(100px, 0px);
+                background-color: pink;
+            }
+        }
+        .ball{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 50px;
+            animation: ball 5s ease-in 1s infinite alternate;
+        }
+        @keyframes ball {
+            0%{transform: translate(200px,200px);}
+            100%{transform: translate(0px,0px);}
+        }
+        button:hover+p{
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+
+<body>
+    <button>stop</button>
+    <p>
+        Animat
+    </p>
+    <div class="ball"></div>
+</body>
+
+</html>

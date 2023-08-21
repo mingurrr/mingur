@@ -1,0 +1,102 @@
+.border {
+  width: 1px;
+  height: 1px;
+  border-top: 10px solid black;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid red;
+}
+
+.border_tip {
+  position: relative;
+  background: #ebb7db;
+  left: 50%;
+  top: 100px;
+  width: 400px;
+  margin-left: -200px;
+}
+
+.border_tip:before {
+  content: '';
+  position: absolute;
+  border-top: 10px solid #000000;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  bottom: -10px;
+  left: 50%;
+  margin-left: -20px;
+}
+
+.border_tip:after {
+  content: '';
+  position: absolute;
+  border-bottom: 10px solid #000000;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  top: -10px;
+  left: 50%;
+  margin-left: -20px;
+}
+
+.left {
+  position: absolute;
+  border-right: 10px solid black;
+  border-bottom: 10px solid transparent;
+  border-top: 10px solid transparent;
+  top: 50%;
+  margin-top: -10px;
+  left: -10px;
+}
+
+.right {
+  position: absolute;
+  border-left: 10px solid black;
+  border-bottom: 10px solid transparent;
+  border-top: 10px solid transparent;
+  top: 50%;
+  margin-top: -10px;
+  right: -10px;
+}
+/* speech bubble */
+.speech-bubble {
+  background-color: #ebebeb;
+  padding: 80px;
+  position: relative;
+  text-align: center;
+  border-radius: 50%;
+  width: 300px;
+  margin: auto;
+  bottom: -100px;
+}
+.speech-bubble::before{
+  content: '';
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border-radius: 50%;
+  border-right: 40px solid #ebebeb;
+  border-left:40px solid transparent;
+  bottom: -10px;
+  left: 0;
+}
+.heart{
+  background-color: pink;
+  width: 80px;
+  height: 130px;
+  position: relative;
+  border-radius:80px 80px 0 0 ;
+  transform: rotate(25deg);
+  left: 10%;
+  top: 100px;
+}
+.heart::before{
+  content: '';
+  background-color: pink;
+  width: 80px;
+  height: 130px;
+  position: absolute;
+  border-radius:80px 80px 0 0 ;
+  transform: rotate(296deg);
+  right: 100px;
+  bottom: -30px;
+}

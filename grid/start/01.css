@@ -1,0 +1,14 @@
+#wrapper{
+    display:inline-grid; /* 컨테이너 내의 요소를 인라인레벨로 배치 */
+    display: grid; /* 컨테이너 내의 요소를 블록레벨로 배치 */
+    grid-template-columns: 200px 200px 200px; /* 고정폭 200px 컬럼 3개 */
+    grid-template-rows: 100px 100px; /* 고정높이 100px 행 2개 */
+}
+/* fraction 분수 : 비율로 지정 */
+#wrapper{
+ grid-template-columns: 1fr 2fr 1fr ;  /* 1:2:1 */
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-columns: repeat(3,1fr); /* 1fr 1fr 1fr */
+ grid-template-rows: repeat(2,200px);
+}
+
