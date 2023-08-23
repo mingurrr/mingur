@@ -3,8 +3,8 @@
 .wrap{
     width: 100%;
 }
-.container{max-width: 1180px; width: 100%; margin: auto; background: lightblue; 
-height: inherit;}
-header{ height: 72px; background-color: green;}
-main{height: 4619px; background-color: blue;}
-footer{height: 499px; background-color: red;}
+.container{max-width: 1296px; width: 100%; margin: auto; background: lightblue; 
+height: inherit; opacity: 0.5;}
+header{ height: 72px; background-color: rgb(250, 197, 197);}
+main{height: 4619px; background-color: rgb(182, 145, 145);}
+footer{height: 499px; background-color: rgb(143, 141, 141);}

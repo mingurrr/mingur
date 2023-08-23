@@ -48,14 +48,3 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* custom */
-
-*{
-    box-sizing: border-box;
-}
-html{
-    overflow-y: scroll; overflow-x: hidden;
-}
-a {
-    text-decoration: none;
-}
