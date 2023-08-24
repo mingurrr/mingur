@@ -30,3 +30,30 @@ slide();
 }, 500);
 
 slides.eq(n).addClass('on');
+
+
+/** 
+ *tab 
+*/  
+const tabBtn=$('.board .buttons li');
+const panels=$('.panels>div');
+tabBtn.on('click',function(e){
+	e.preventDefault();
+	let tg=$(this).index();
+	panels.hide();
+	tabBtn.removeClass('on');
+	panels.eq(tg).show();
+	tabBtn.eq(tg).addClass('on');
+});
+
+/* popup */
+$('.open').on('click',function(e){
+	e.preventDefault();
+	$('.popup').show();
+	$('.overlay').addClass('open');
+})
+$('.close').on('click',function(e){
+	e.preventDefault();
+	$('.popup').hide();
+	$('.overlay').removeClass('open');
+})
