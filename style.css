@@ -1,0 +1,34 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Jua&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* reset */
+*{margin: 0; padding: 0; box-sizing: border-box; }
+ul,li,ol,dt,dd,dl{list-style: none;}
+a{text-decoration: none; color: #333; font-size: 1.6rem; }
+a:link,a:visited{color: #333;}
+img{border: 0; vertical-align: top;}
+
+html{overflow-y:scroll; font-size: 62.5%;}
+body{font-family: 'Noto Sans KR', sans-serif; font-size: 1.6rem; line-height: 1.75; }
+
+/* 공통 */
+.inner {max-width: 140rem; margin: 0 auto;}
+
+/* 상단메뉴바 */
+nav {position: relative; width: 100%; height: 9.4rem; background-color: #fff;}
+nav>.gnb{display: flex;}
+nav>.gnb li{margin:0 3.8rem;}
+nav>.gnb li.logo{width: 18rem; margin: 0 0 0 2.5rem;}
+nav>.gnb li.logo a{display: block; background: url(./css-menu/image/freesamLogo\ \(1\).jpg) no-repeat center center/18rem; text-indent: -999999999px; overflow: hidden; font-size: 0px; }
+
+
+nav>.gnb li>a{display: block; line-height: 9.4rem; font-size: 1.2rem; font-weight: bold;}
+nav>.gnb li a:hover{color: red;}
+
+nav>.gnb>li .menu_title img{width: 135px;}
+
+/* 투뎁스배경 */
+nav .gnb_bg{position: absolute; background: #fbfbff; box-shadow: 0 2px 2px rgb(0 0 0 / 7%); top: 9.4rem; left: 0; width: 100%; padding: 0 0; transition: all 0.5s; height: 0; overflow: hidden;}
+
+/* hover */
+.gnb .dep1:hover .gnb_bg {padding: 0 2rem; height: auto;  box-shadow: 0 0px 10px rgb(0,0,0 / 5%); }
