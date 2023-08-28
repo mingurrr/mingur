@@ -64,6 +64,14 @@ nav .gnb_bg { position: absolute; background: #fbfbff; top: 9.4rem; left: 0; wid
 .gnb .dep1:hover .gnb_bg:before { padding: 2rem 0; } 
 
 /* main */
-main{}
 main .main_banner{height: 100vh; background: url(../../2023-08-20\ 233105.png) no-repeat ; background-size: cover; }
-.main_banner ul{display: flex; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);}
+.main_banner ul{display: flex; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); gap: 1rem;}
+
+/* flex: flex-grow flex-chrink flex-basis */
+.main_banner li{position: relative; flex:1 1 30%;  height: 200px; background: rgba(255,255,255,.5); color: #e9db9e; text-align: center; font-size: 4em; line-height: 200px; transition: margin 0.5s; padding: 0 60px;}
+.main_banner li:hover{margin-top: -10px;}
+.main_banner li:after{content: "🐓"; position: absolute; left: 92px; top: -70px; transition: all 0.5s; opacity: 0;}
+.main_banner li:hover:after{opacity: 1;}
+.main_banner li::before{content: ''; width: 0; position: absolute; height: 12px; background: #00ff40; bottom: 0%; left: 50%; transform: translate(-50%); transition: width 0.5s;}
+
+.main_banner li:hover:before{width: 100%;}
