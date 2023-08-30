@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .checkbox {
+            margin: 2em 0;
+        }
+
+        input.checkbox1 {
+            font-size: 1.5em;
+            width: 1.25em;
+            height: 1.25em;
+            vertical-align: middle;
+        }
+
+        input.checkbox+label {
+            font-size: 1.125em;
+            vertical-align: middle;
+        }
+
+        input.radio1 {
+            width: 100px;
+            height: 100px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" method="get">
+        <div class="checkbox">
+            <input type="checkbox" name="check1" id="check1" value="1" class="checkbox1">
+            <label for="check1">큰체크박스</label>
+            <input type="radio" id="rad" class="radio1">
+            <label for="rad">큰라디오버튼</label>
+        </div>
+    </form>
+</body>
+
+</html>
