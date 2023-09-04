@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .coloring {
+            background: rgb(2, 0, 36);
+            background-image: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 39%, rgba(8, 25, 131, 1) 40%, rgba(0, 212, 255, 1) 100%);
+            width: 300px;
+            height: 300px;
+            margin: auto;
+            transition: backgrouns-image 1s ease;
+            position: relative;
+        }
+
+        .coloring:hover {
+            background: rgb(2, 0, 36);
+            background-image: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 39%, rgba(8, 25, 131, 1) 40%, rgba(0, 212, 255, 1) 100%);
+        }
+        div.box{
+            position: absolute;
+            left: 70px;
+            top: 70px;
+            width: 60px;
+            height: 60px;
+            background: #a00;
+            border: 5px solid pink;
+            box-shadow: 0 0 15px 0 -5px rgba(0,0,0,.4);
+            border-radius: 35px;
+            animation: move 1s infinite alternate;
+        }
+
+        @keyframes move {
+            25%{transform: translate(100px,0px);}
+            50%{transform:translate(100px,100px);}
+            75%{transform:translate(0px,100px);}
+            100%P{transform:translate(0px,0px);}
+        }
+    </style>
+</head>
+
+<body>
+    <div class="coloring">
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
