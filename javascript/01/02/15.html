@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let height = parseInt (prompt('키를 적으시오'));
+        let weight = parseInt (prompt('몸무게를 적으시오'));
+        let normal = (height-100)*0.9;
+        const result = weight > normal ? "🐷" : "🦴"
+        document.write('<h1>' + result +' </h1>')
+    </script>
+</body>
+
+</html>
