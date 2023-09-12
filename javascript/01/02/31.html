@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>반복문</h1>
+    <h2>for</h2>
+    <div id="for"></div>
+    <hr>
+    <h2>forEach</h2>
+    <div id="foreach"></div>
+    <hr>
+    <h2>for of</h2>
+    <div id="forof"></div>
+    <hr>
+    <h2>for in</h2>
+    <div id="forin"></div>
+    <hr>
+    <h2>do / while</h2>
+    <div id="dowhile"></div>
+    <script>
+        let foods = ["떡볶이", "순대", "오뎅"];
+        for (let i = 0; i < foods.length; i++) {
+            document.getElementById("for").innerHTML
+                += i + ":" + foods[i] + "<br>"
+        }
+        foods.forEach(function (item, index) {
+            /*         console.log("item:" + item);
+                    console.log("item:" + index); */
+            document.getElementById("foreach").
+                innerHTML += `${index} : ${item} <br>`
+        })
+        //for of : for ( 변수 of 배열 ){반복실행문}
+        for (let x of foods) {
+            console.log("✔", x);
+            document.getElementById("forof").
+                innerHTML += `${x}<br>`
+        }
+        //for in : for ( 변수 in 배열 ){반복실행문}
+        for (let j in foods) {
+            document.getElementById("forin").innerHTML += ` ${j} : ${foods[j]}<br>`
+        }
+    //for while
+    let d = 0;
+    do{
+        document.getElementById("dowhile").innerHTML += `${foods[d]}
+        <br>` //떡볶이
+        d++;//(1)0=0+1
+    }
+    while (d <foosd.length)
+    
+
+    </script>
+    <script src="array.js"></script>
+</body>
+
+</html>
