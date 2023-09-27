@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #four span {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="page">
+        <h1 id="header">textContent/innerText</h1>
+        <h2 id="gkdid">망고의 쇼핑목록</h2>
+        <ul>
+            <li id="one" class="hot">
+                <em>삑삑공</em>
+            </li>
+            <li id="two" class="hot">연어간식</li>
+            <li id="three" class="hot">치즈껌</li>
+            <li id="four"><span>😀😀😀😀😀</span></li>
+        </ul>
+        <div id="scriptResults"></div>
+        <div id="scriptResultss"></div>
+    </div>
+    <script>
+        //상수변수 firstItem 을 선언하고 #one elementNode 를 querySelector 로 할당하세요
+        const firstItem = document.querySelector('#one');
+        const showTextContent = firstItem.textContent
+        console.log(showTextContent);
+        const showInnerText = firstItem.innerText;
+        console.log(showInnerText);
+        //동적요소추가
+        let msg = `<p>TextContent: ${showTextContent}</p>`
+        msg += `<p>innerText: ${showInnerText}</p>`
+        //추가할 기준요소선택
+        let el = document.querySelector('#scriptResults');
+        el.innerHTML = msg;
+    </script>
+    <script>
+        const text4 = document.querySelector('#four');
+        const text4Content=text4.textContent;
+        const text4Inner=text4.innertext;
+        console.log(text4Content);
+        console.log(text4Inner);//숨겨진거 반환x
+        el.innerHTML += text4Content;
+        document.querySelector('#two').textContent='공주드레스'
+    </script>
+</body>
+
+</html>

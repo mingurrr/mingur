@@ -1,0 +1,34 @@
+const depth1 = document.querySelectorAll('gnb>li');
+const sub = document.querySelectorAll('.sub');
+depth1.forEach((el) => {
+    el.addEventListener('click', function () {
+        let tg = this;
+        let subH=document.querySelector('.sub>li').clientHeight;
+        console.log(tg.childElementCount);
+        let subLen = tg.children[1].childElementCount;
+        let subTH = subH * subLen;
+        tg.querySelector('.sub').classList.add('on');
+        tg.querySelector('.sub').style.height = subTH + 'px';
+    });
+    function subOff(){
+        sub.forEach((el)=>{
+            el.classList.remove('on');
+            el.style.height = 0;
+        })
+    }
+});
+
+
+// $('.gnb>li').on('click', function () {
+//     /* this는 객체 자기 자신 */
+//     let tg = $(this);
+//     let subH = $('.sub>li').innerHeight();
+//     console.log(subH);
+//     /* 서브메뉴의 높이를 서브 메뉴의 길이(갯수)마다 다르게 설정 */
+//     let subLen = tg.find('li>a').length;
+//     let subTH = subH * subLen;
+//     /* 끄고 */
+//     $('.sub').removeClass('on').innerHeight(0);
+//     /* 킨다 */
+//     tg.find('.sub').addClass('on').innerHeight(subTH);
+// });

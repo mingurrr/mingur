@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link,
+        a:visited {
+            color: black;
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+            width: 500px;
+            margin: 10px auto;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            width: 120px;
+            border: 1px solid #ccc;
+            padding: 10px 15px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        #result {
+            width: 500px;
+            height: 300px;
+            margin: 30px auto;
+            border: 2px solid #ccc;     
+            border-radius: 15px;
+        }
+
+        p {
+            width: 80%;
+            padding: 10px;
+            line-height: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="change">change</button>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi iure sequi aliquid animi quia molestiae,
+        eveniet velit soluta quo sed labore quasi voluptatum, deserunt totam quis temporibus minus. Numquam, doloribus?
+    </p>
+    <script>
+        const changeBttn=document.querySelector('#change');
+        changeBttn.onclick=changeClolr();
+        function changeClolr(params){
+            document.querySelector('p').style.color = '#f00';
+        }  
+    </script>
+</body>
+
+</html>

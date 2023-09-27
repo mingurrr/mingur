@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const dev = {
+            name: "박민혁", //property
+            skill: ['javascript', 'html', 'css']
+        }
+        console.log(dev);
+        document.write(`<h1>${dev.skill[0]}</h1>`)
+    </script>
+    <script>
+        const moni = {
+            name: '모니',
+            eat: function (food) {
+                alert(`${this.name}야 ${food} 먹자`)
+            }
+        }
+        moni.eat("맘마")
+    </script>
+</body>
+
+</html>
